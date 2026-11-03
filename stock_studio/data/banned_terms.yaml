@@ -1,0 +1,245 @@
+# Terms that must never appear in a generation prompt, title or keyword.
+# Adobe Stock's generative AI rules ban artist names, real people, brands and copyrighted
+# works in prompts, titles and keywords. This list is a starting point, not a complete one:
+# add names as you meet them (local brands, celebrities, characters).
+#
+# Matching is case-, accent- and punctuation-insensitive, handles possessives/plurals
+# ("Nike's", "Nikes") and joined spellings ("cocacola"), but only on whole words, so
+# "pineapple" never matches "apple".
+
+block:
+  brands:
+    - coca cola
+    - pepsi
+    - nike
+    - adidas
+    - reebok
+    - mcdonald's
+    - starbucks
+    - kfc
+    - burger king
+    - pizza hut
+    - domino's
+    - red bull
+    - nestle
+    - nescafe
+    - heineken
+    - google
+    - microsoft
+    - iphone
+    - ipad
+    - macbook
+    - airpods
+    - samsung
+    - huawei
+    - xiaomi
+    - oppo
+    - facebook
+    - instagram
+    - whatsapp
+    - tiktok
+    - youtube
+    - twitter
+    - linkedin
+    - snapchat
+    - netflix
+    - spotify
+    - uber
+    - airbnb
+    - paypal
+    - mastercard
+    - android
+    - playstation
+    - xbox
+    - nintendo
+    - intel
+    - nvidia
+    - sony
+    - lenovo
+    - tesla
+    - bmw
+    - mercedes benz
+    - toyota
+    - honda
+    - ferrari
+    - lamborghini
+    - porsche
+    - rolex
+    - gucci
+    - louis vuitton
+    - chanel
+    - prada
+    - versace
+    - zara
+    - ikea
+    - lego
+    - barbie
+    - disney
+    - pixar
+    - marvel
+    - dc comics
+    - warner bros
+    - adobe
+    - photoshop
+    - illustrator
+    - freepik
+    - magnific
+    - shutterstock
+    - getty images
+    - istock
+    - chatgpt
+    - openai
+    - midjourney
+    - dall e
+    - stable diffusion
+    - imagen
+    - leonardo ai
+    - artstation
+    - unreal engine
+    - octane render
+    # Sri Lankan brands
+    - dilmah
+    - elephant house
+    - keells
+    - cargills
+    - srilankan airlines
+    - mobitel
+    - arpico
+    - munchee
+    - maliban
+
+  artists:
+    - greg rutkowski
+    - alphonse mucha
+    - van gogh
+    - vincent van gogh
+    - picasso
+    - claude monet
+    - banksy
+    - studio ghibli
+    - hayao miyazaki
+    - makoto shinkai
+    - artgerm
+    - wlop
+    - beeple
+    - james jean
+    - frida kahlo
+    - salvador dali
+    - andy warhol
+    - gustav klimt
+    - hokusai
+    - rembrandt
+    - leonardo da vinci
+    - michelangelo
+    - ansel adams
+    - annie leibovitz
+    - steve mccurry
+    - wes anderson
+    - tim burton
+    - norman rockwell
+    - edward hopper
+    - yayoi kusama
+    - keith haring
+    - george keyt
+
+  real_people:
+    - elon musk
+    - taylor swift
+    - donald trump
+    - joe biden
+    - barack obama
+    - queen elizabeth
+    - king charles
+    - cristiano ronaldo
+    - lionel messi
+    - beyonce
+    - rihanna
+    - kim kardashian
+    - mark zuckerberg
+    - bill gates
+    - jeff bezos
+    - narendra modi
+    - shah rukh khan
+    - virat kohli
+    - mahatma gandhi
+    - albert einstein
+    - marilyn monroe
+    - dalai lama
+    - kumar sangakkara
+    - muttiah muralitharan
+    - sanath jayasuriya
+    - mahela jayawardene
+    - anura kumara dissanayake
+    - ranil wickremesinghe
+    - mahinda rajapaksa
+    - gotabaya rajapaksa
+    - jacqueline fernandez
+
+  characters_and_works:
+    - mickey mouse
+    - minnie mouse
+    - donald duck
+    - spider man
+    - spiderman
+    - batman
+    - superman
+    - wonder woman
+    - iron man
+    - avengers
+    - harry potter
+    - hogwarts
+    - pikachu
+    - pokemon
+    - star wars
+    - darth vader
+    - baby yoda
+    - grogu
+    - hello kitty
+    - super mario
+    - sonic the hedgehog
+    - minions
+    - shrek
+    - peppa pig
+    - simpsons
+    - transformers
+    - game of thrones
+    - lord of the rings
+    - frozen elsa
+    - mona lisa
+    - starry night
+
+# Common words that are also brands: flagged as warnings for you to judge, never auto-blocked.
+warn:
+  - apple
+  - amazon
+  - shell
+  - dove
+  - gap
+  - jaguar
+  - puma
+  - corona
+  - mars
+  - target
+  - subway
+  - visa
+  - windows
+  - canon
+  - gemini
+  - dialog
+  - galaxy
+  - alexa
+  - kindle
+  - polo
+  - mustang
+  - beetle
+  - firefly
+  - oracle
+
+# Phrases that signal style-copying or tool-name stuffing (regex on normalised, lower-case text).
+patterns:
+  - '\bin the style of\b'
+  - '\bin the manner of\b'
+  - '\binspired by the work of\b'
+  - '\b(art|artwork) by [a-z]+'
+  - '\bby (the )?artist\b'
+  - '\btrending on\b'
