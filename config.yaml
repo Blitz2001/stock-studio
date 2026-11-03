@@ -1,0 +1,45 @@
+# Stock Studio configuration. Paths are relative to this file.
+workspace: workspace            # all runtime data (db, assets, exports) lives here; git-ignored
+
+export:
+  weekly_cap: 100               # max files exported per platform per ISO week (stay well under your real limit)
+  batch_size: 50                # files per CSV/batch folder inside a week
+  strip_gps: true               # remove GPS EXIF from your phone photos before export
+  max_upscale_factor: 2.0       # never upscale more than this; reject instead
+
+platforms:
+  adobe:
+    enabled: true
+    min_megapixels: 4.0         # Adobe Stock photo/illustration minimum
+    max_keywords: 49
+    max_title_chars: 200
+    video_min_height: 720
+  freepik:
+    enabled: true
+    min_shortest_side: 2000     # verify in your Freepik/Magnific dashboard; rules change
+    max_keywords: 50
+    max_title_chars: 100
+    csv_delimiter: ";"
+    # Column names for the Freepik metadata CSV. Check the template in your dashboard
+    # before a bulk upload and edit these if they differ.
+    csv_columns: ["Filename", "Title", "Keywords", "Prompt", "Model"]
+
+qc:
+  blur_threshold: 30.0          # Laplacian variance of the sharpest tiles; below = soft. Raise if too lenient
+  clip_fraction_max: 0.06       # share of pixels fully black or white before we call it clipped
+  require_vision_check_for_ai: true   # ai_images can't pass QC on technical checks alone
+
+dedupe:
+  clip_threshold: 0.93          # cosine similarity at/above = near-duplicate (CLIP embedder)
+  phash_threshold: 0.90         # same for the fallback perceptual embedder
+
+photos:
+  blur_threshold: 25.0          # culls only clearly blurry shots at ingest
+  max_straighten_degrees: 5.0
+  colour_correction_strength: 0.5   # 0 = off, 1 = full grey-world white balance
+
+scout:
+  lookahead_days_min: 30        # buyers search ahead; upload at least a month early
+  lookahead_days_max: 120
+  briefs_per_week: 12
+  seed: null                    # set an int for reproducible picks

@@ -1,0 +1,164 @@
+# Seasonal demand calendar. Buyers search 1-3 months before an event, so the scout
+# suggests topics whose date falls 30-120 days ahead (see config.yaml -> scout).
+#
+# Fixed dates: month + day. Lunar/movable dates: approx: true; the scout labels them
+# "confirm date" (Vesak, Poson, Eid, Diwali, Holi, Easter move every year).
+# region: global | sri_lanka | south_asia  (sri_lanka/south_asia get a supply-gap bonus)
+
+events:
+  - name: New Year
+    month: 1
+    day: 1
+    region: global
+    shots: [fireworks over a city skyline, new year resolution notebook flat lay, countdown party with friends, 2027 calendar planning desk]
+    lanes: [my_photos, code_vectors, ai_images]
+  - name: Thai Pongal
+    month: 1
+    day: 14
+    region: sri_lanka
+    shots: [pongal pot boiling over with milk rice, kolam rice-flour patterns at a doorway, sugarcane and turmeric offerings, family sharing sweet pongal]
+    lanes: [my_photos, code_vectors]
+  - name: Lunar New Year
+    month: 2
+    day: 1
+    approx: true
+    region: global
+    shots: [red envelopes on a table, lanterns pattern, family reunion dinner]
+    lanes: [code_vectors, ai_images]
+  - name: Sri Lanka Independence Day
+    month: 2
+    day: 4
+    region: sri_lanka
+    shots: [national flag waving against blue sky, school children in white uniforms, celebration banner template]
+    lanes: [my_photos, code_vectors]
+  - name: Valentine's Day
+    month: 2
+    day: 14
+    region: global
+    shots: [couple sharing tea at a seaside cafe, heart seamless pattern, handmade gift wrapping, roses at a local flower market]
+    lanes: [my_photos, code_vectors, ai_images]
+  - name: Ramadan
+    month: 2
+    day: 8
+    approx: true
+    region: south_asia
+    shots: [iftar table with dates and rolls, crescent and lantern pattern, mosque at dusk]
+    lanes: [my_photos, code_vectors, ai_images]
+  - name: International Women's Day
+    month: 3
+    day: 8
+    region: global
+    shots: [south asian women entrepreneurs at work, female tea pluckers, women in tech team meeting]
+    lanes: [my_photos, ai_images]
+  - name: Eid al-Fitr
+    month: 3
+    day: 10
+    approx: true
+    region: south_asia
+    shots: [eid greeting card template, family in festive clothes, watalappan and sweets platter]
+    lanes: [code_vectors, my_photos]
+  - name: Holi
+    month: 3
+    day: 22
+    approx: true
+    region: south_asia
+    shots: [colour powder bowls, splash pattern background, friends celebrating with colours]
+    lanes: [code_vectors, ai_images]
+  - name: Sinhala and Tamil New Year
+    month: 4
+    day: 14
+    region: sri_lanka
+    shots: [kavili sweets platter (kokis, kavum, aluwa), lighting the hearth at the auspicious time, children playing raban, oil anointing ceremony, erabadu flowers]
+    lanes: [my_photos, code_vectors, ai_images]
+  - name: Easter
+    month: 4
+    day: 5
+    approx: true
+    region: global
+    shots: [painted eggs flat lay, spring pattern, church service candles]
+    lanes: [code_vectors, ai_images]
+  - name: Earth Day
+    month: 4
+    day: 22
+    region: global
+    shots: [reforestation volunteers, plastic-free market shopping, recycling icon set]
+    lanes: [my_photos, code_vectors]
+  - name: Vesak
+    month: 5
+    day: 1
+    approx: true
+    region: sri_lanka
+    shots: [handmade vesak lanterns glowing at night, pandal illuminations, dansal free food stall, oil lamps at a temple, lotus flower offerings]
+    lanes: [my_photos, code_vectors, ai_images]
+  - name: Mother's Day
+    month: 5
+    day: 10
+    approx: true
+    region: global
+    shots: [south asian mother and daughter cooking, card template, flowers and tea breakfast in bed]
+    lanes: [my_photos, code_vectors, ai_images]
+  - name: Poson
+    month: 6
+    day: 1
+    approx: true
+    region: sri_lanka
+    shots: [pilgrims in white at Mihintale steps, poson lanterns, dansal queues]
+    lanes: [my_photos]
+  - name: World Environment Day
+    month: 6
+    day: 5
+    region: global
+    shots: [mangrove restoration, solar panels on a village roof, eco icon set]
+    lanes: [my_photos, code_vectors]
+  - name: Father's Day
+    month: 6
+    day: 20
+    approx: true
+    region: global
+    shots: [father and son flying a kite on Galle Face Green, card template, tools gift flat lay]
+    lanes: [my_photos, code_vectors]
+  - name: Esala Perahera
+    month: 8
+    day: 1
+    approx: true
+    region: sri_lanka
+    shots: [kandyan dancers in costume, fire dancers at night, drummers, decorated crowd scenes (wide, no identifiable faces without releases)]
+    lanes: [my_photos]
+  - name: Back to School
+    month: 8
+    day: 20
+    region: global
+    shots: [stationery flat lay, students in uniform walking to school, school supplies icon set]
+    lanes: [my_photos, code_vectors, ai_images]
+  - name: World Mental Health Day
+    month: 10
+    day: 10
+    region: global
+    shots: [calm person meditating, therapy session concept, mental health icon set]
+    lanes: [code_vectors, ai_images]
+  - name: Deepavali
+    month: 10
+    day: 29
+    approx: true
+    region: south_asia
+    shots: [oil lamps (diyas) in a row, rangoli/kolam patterns, sweets boxes, family lighting lamps]
+    lanes: [my_photos, code_vectors, ai_images]
+  - name: Halloween
+    month: 10
+    day: 31
+    region: global
+    shots: [pumpkin pattern, spooky party invitation template]
+    lanes: [code_vectors]
+  - name: Black Friday and Cyber Monday
+    month: 11
+    day: 27
+    approx: true
+    region: global
+    shots: [sale banner templates, online shopping on smartphone, delivery boxes at a door]
+    lanes: [code_vectors, ai_images]
+  - name: Christmas
+    month: 12
+    day: 25
+    region: global
+    shots: [tropical christmas (palm tree with lights), christmas pattern set, family dinner in a sri lankan home, christmas cake and breudher]
+    lanes: [my_photos, code_vectors, ai_images]

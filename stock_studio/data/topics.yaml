@@ -1,0 +1,66 @@
+# Evergreen topics: buyers search these all year.
+evergreen:
+  - topic: remote work and hybrid office
+    shots: [laptop video call at a home desk, team meeting in a modern Colombo office, coworking space]
+    lanes: [my_photos, ai_images]
+  - topic: small business and entrepreneurship
+    shots: [shop owner at a boutique counter, hands packing online orders, QR code payment at a market stall]
+    lanes: [my_photos, ai_images]
+  - topic: finance and fintech
+    shots: [mobile banking icon set, savings growth infographic, family budgeting at a table]
+    lanes: [code_vectors, ai_images]
+  - topic: healthcare
+    shots: [doctor consulting a patient, medical icon set, pharmacy shelves]
+    lanes: [code_vectors, ai_images]
+  - topic: education and e-learning
+    shots: [student studying online, e-learning icon set, classroom with teacher]
+    lanes: [my_photos, code_vectors, ai_images]
+  - topic: sustainability and renewable energy
+    shots: [solar panels, wind turbines, eco icon set, recycling infographic]
+    lanes: [code_vectors, my_photos]
+  - topic: technology and ai concepts
+    shots: [abstract data network pattern, cybersecurity icon set, process-flow infographic]
+    lanes: [code_vectors]
+  - topic: food and healthy eating
+    shots: [fresh fruit at a market, healthy breakfast flat lay, spices close-up]
+    lanes: [my_photos]
+  - topic: travel and tourism
+    shots: [beach at sunrise, train through hill country, travel icon set]
+    lanes: [my_photos, code_vectors]
+  - topic: abstract backgrounds and patterns
+    shots: [geometric seamless pattern, wave pattern, gradient mesh background]
+    lanes: [code_vectors]
+
+# South Asian subjects that are still undersupplied on stock sites. Real photos win here:
+# AI can't fake real places, and buyers want authenticity.
+underserved:
+  - topic: sri lankan tea plantations and tea pluckers
+    shots: [tea pluckers at work in Nuwara Eliya (with model releases), rows of tea bushes in mist, freshly plucked leaves in a basket, tea factory machinery]
+    lanes: [my_photos]
+  - topic: sri lankan food
+    shots: [rice and curry spread on a banana leaf, hoppers and pol sambol, kottu being chopped at a street stall, string hoppers breakfast, king coconut stall]
+    lanes: [my_photos]
+  - topic: sri lankan everyday life
+    shots: [tuk-tuk traffic in Pettah, fish market at Negombo, bus stand rush hour, village well, paddy field harvest]
+    lanes: [my_photos]
+  - topic: south asian business people
+    shots: [south asian team meeting in a modern office, female engineer on a construction site, startup founders brainstorming]
+    lanes: [ai_images, my_photos]
+  - topic: south asian families and homes
+    shots: [multi-generational family meal, grandparents with grandchildren, family using a smartphone together]
+    lanes: [ai_images, my_photos]
+  - topic: sri lankan architecture and heritage
+    shots: [colonial buildings in Galle Fort, dagoba against blue sky (no flash, respectful framing), Kandyan roof details, tropical modernist houses]
+    lanes: [my_photos]
+  - topic: sri lankan nature and wildlife
+    shots: [elephants at a reservoir, peacock in dry zone forest, mangroves, monsoon rain on leaves]
+    lanes: [my_photos]
+  - topic: south asian textile and craft patterns
+    shots: [batik-inspired seamless pattern, handloom weave texture, lacquer-work motifs, kolam geometric pattern]
+    lanes: [code_vectors, my_photos]
+  - topic: south asian festivals and rituals
+    shots: [temple offerings, oil lamp lighting, traditional drummers]
+    lanes: [my_photos]
+  - topic: agriculture and farming in south asia
+    shots: [paddy transplanting, farmer with smartphone, coconut harvesting, cinnamon peeling]
+    lanes: [my_photos]

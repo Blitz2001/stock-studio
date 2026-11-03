@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stock-studio"
+version = "0.1.0"
+description = "Agentic pipeline for running Adobe Stock and Freepik contributor accounts within their rules"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pillow>=10.0",
+    "numpy>=1.26",
+    "opencv-python-headless>=4.9,<5",   # 5.x moved the Haar face detector to contrib
+    "pyyaml>=6.0",
+    "python-dotenv>=1.0",
+    "pandas>=2.1",
+    "streamlit>=1.32",
+    "cairosvg>=2.7",
+]
+
+[project.optional-dependencies]
+gemini = ["google-genai>=1.0"]
+claude = ["anthropic>=0.40"]
+openai = ["openai>=1.40"]
+clip = ["sentence-transformers>=3.0"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+stock-studio = "stock_studio.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["stock_studio*"]
+
+[tool.setuptools.package-data]
+stock_studio = ["data/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
