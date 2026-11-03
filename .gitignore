@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+# Runtime data: your photos, generated assets, exports and sales reports stay local
+workspace/
